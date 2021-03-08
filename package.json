@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Kenny-WilliamsStockdale/SDVJavaScript#readme",
   "dependencies": {
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "nvm": "0.0.4"
   }
 }
