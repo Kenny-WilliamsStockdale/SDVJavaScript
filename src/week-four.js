@@ -1,5 +1,15 @@
 // Values & Variables
 
+let f = 5  // declare variable and number value
+let g = f  // declare new variable where value = previous declared variable
+console.log(f) // 5
+console.log(g) // 5
+console.log(f === g) // true   
+f = 10
+console.log(f) // 10
+console.log(g) // 5
+console.log(f === g) // false
+
 let country = 'New Zealand'
 let city = 'Nelson' //data type string
 let postalCode = 7010 // data type number
@@ -90,3 +100,28 @@ console.log(myInfo)
 // } else {
 //     console.log('no good delete')
 // }
+
+let c = 11              // logic gate / ES6 operator example (hard to follow)
+
+if (c === 11 || typeof c === 'string') {  // true because of || or operator c = 11 so true 
+    console.log('its true')
+} else {
+    console.log('error')
+}
+
+let v = 11              // logic gate / ES6 operator example (hard to follow) using different logic gates
+
+if (v != 11) {  // not equal to comes up false because v IS 11 
+    console.log('its true')
+} else {
+    console.log('error')
+}
+
+let n = 11              // logic gate / ES6 operator example (hard to follow) using different logic gates
+
+if (n) {  // short hand ES6 
+    console.log('its true')
+} else {
+    console.log('error')
+}
+
