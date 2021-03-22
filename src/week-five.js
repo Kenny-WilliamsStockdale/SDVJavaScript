@@ -36,6 +36,32 @@ person.driver = person.age >=16 ? 'Yes' : 'No'; //Ternary operator
 console.log(person.driver);
 
 
-let isStudent = false;  //ternary operator code
-let price = isStudent ? 8 : 12  // condition: finding out the price (result of this condition) = checking isStudent variable true/false ? if true = 8 : if false = 12
-console.log(price); 
+// let isStudent = false;  //ternary operator code
+// let price = isStudent ? 8 : 12  // condition: finding out the price (result of this condition) = checking isStudent variable true/false ? if true = 8 : if false = 12
+// console.log(price); 
+
+
+// Example nested if else statement
+// let price
+// let isSenior = true
+// let isStudent = false
+// if (isStudent) {
+//     price = 8 
+// } else if (isSenior) {
+//     price = 6
+// } else {
+//     price = 10
+// }
+// console.log(price)
+
+// let isStudent = false;  // nested ternary operator example 
+// let isSenior = true; let price = isStudent ? 8 : isSenior ? 6 : 10
+// console.log(price);
+
+// let isStudent = true;  // multiple operations example this works in the console of the browser as i do not have full node installed.
+// let price = 12;isStudent ? (
+//     price = 8,
+//     alert('Please check for student ID')
+// ) : (
+//     alert('Enjoy the movie')
+// );
