@@ -108,3 +108,22 @@ for (let i = 0; i < 3; i++) console.log('"loop."'); // The condition statement w
 for (let i = 0; i < 10; i++) { if (i == 5) continue; console.log( i ); } //skipping a step with the continue keyword
 
 for (let i = 0;; i++) { console.log("loop"); break; };
+
+let string = 'Jenkins Jones';
+for (let value of string) // for of loops example (string array) gets the value of the string plus the size. JavaScript looks at it as an array
+console.log( value );
+console.log(string.length)
+
+let array = [0, 1, 2];
+for (let value of array)
+console.log(value)
+console.log(array.length) // finding out length of array
+
+// let object = { a: 1, b: 2, c: 3 };for (let value of object) // Error: object is not iterable
+// console.log( value );
+let object = { a: 1, b: 2, c: 3 };
+for (let key of Object.keys( object )) 
+console.log(key); // Error: object is not iterable, have to convert to an array first using object.key
+
+// let object = { a: 1, b: 2, c: 3 };
+// console.log(Object.keys(object)) // straight convert from object array to make it iterable
