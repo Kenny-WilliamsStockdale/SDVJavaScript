@@ -122,8 +122,8 @@ console.log(array.length) // finding out length of array
 // let object = { a: 1, b: 2, c: 3 };for (let value of object) // Error: object is not iterable
 // console.log( value );
 let object = { a: 1, b: 2, c: 3 };
-for (let key of Object.keys( object )) 
-console.log(key); // Error: object is not iterable, have to convert to an array first using object.key
+for (let key of Object.keys( object )) //For of loop not workable with object
+console.log(key); // Error: object is not iterable, have to convert to an array first using Object.key()
 
 // let object = { a: 1, b: 2, c: 3 };
-// console.log(Object.keys(object)) // straight convert from object array to make it iterable
+// console.log(Object.keys(object)) // straight convert example from object array to make it iterable
