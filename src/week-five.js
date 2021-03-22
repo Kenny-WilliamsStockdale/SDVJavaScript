@@ -109,6 +109,8 @@ for (let i = 0; i < 10; i++) { if (i == 5) continue; console.log( i ); } //skipp
 
 for (let i = 0;; i++) { console.log("loop"); break; };
 
+//FOR OF LOOPS
+
 let string = 'Jenkins Jones';
 for (let value of string) // for of loops example (string array) gets the value of the string plus the size. JavaScript looks at it as an array
 console.log( value );
@@ -119,6 +121,8 @@ for (let value of array)
 console.log(value)
 console.log(array.length) // finding out length of array
 
+//FOR OF LOOPS WITH OBJECT CONVERSION
+
 // let object = { a: 1, b: 2, c: 3 };for (let value of object) // Error: object is not iterable
 // console.log( value );
 let object = { a: 1, b: 2, c: 3 };
@@ -127,3 +131,17 @@ console.log(key); // Error: object is not iterable, have to convert to an array 
 
 // let object = { a: 1, b: 2, c: 3 };
 // console.log(Object.keys(object)) // straight convert example from object array to make it iterable
+
+//WHILE loops
+// while (condition) { /* do something until condition is false */ } //syntax for while loop
+// let c = 0;while (c++ < 5){ //while loop example
+//     console.log(c);
+// }
+
+//WHILE AND CONTINUE loops
+let c = 0; // the continue keyword can be used to skip steps in this case as-well
+while (c++ < 1000) {
+    if (c > 1)
+        continue;
+    console.log(c);
+}
