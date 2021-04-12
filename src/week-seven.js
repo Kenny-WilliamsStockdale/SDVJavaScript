@@ -29,18 +29,18 @@
 // }
 // console.log(oddOrEven([1, 2, 3, 4, 5, 6]))
 
-// function oddOrEven (x) {  // function using .forEach  long version es5
-//     let sum = 0;
-//     for (let i = 0; i < x.length; i++){
-//         sum += x[i]
-//     }
-//     if (sum%2 === 0) {
-//         return 'even'
-//     } else {
-//         return 'odd'
-//     }
-// }
-// console.log(oddOrEven([1, 2, 3, 4, 5]))
+function oddOrEven (x) {  // function using .forEach  long version es5
+    let sum = 0;
+    for (let i = 0; i < x.length; i++){
+        sum += x[i]
+    }
+    if (sum%2 === 0) {
+        return 'even'
+    } else {
+        return 'odd'
+    }
+}
+console.log(oddOrEven([1, 2, 3, 4, 5]))
 
 // arr = ["9.4", "4.2"]
 
@@ -82,15 +82,15 @@
 
 // ('hello') = ('olleh')
 
-function gnirts (x) {  // reversing a string
-    let arr = x.split('') // split with put argument into an array split
-    let newArr = arr.reverse() // reverse the array
-    let joinNewArr = newArr.join('') // now join array as a string
-    return joinNewArr
-}
+// function gnirts (x) {  // reversing a string
+//     let arr = x.split('') // split with put argument into an array split
+//     let newArr = arr.reverse() // reverse the array
+//     let joinNewArr = newArr.join('') // now join array as a string
+//     return joinNewArr
+// }
 
-console.log(gnirts('Ali'))
+// console.log(gnirts('Ali'))
 
 
-const join =(x)=> ((x.split('')).reverse()).join('')
-console.log(join('hahahha'))
+// const join =(x)=> ((x.split('')).reverse()).join('')
+// console.log(join('hahahha'))
