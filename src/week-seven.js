@@ -77,5 +77,20 @@
 
 //console.log(arrayToString([1, 2, 3, 4, 5, 6]))
 
-arrayToString = arr => arr.join('')  // even smaller es6 function of the above statement
-console.log(arrayToString([1, 2, 3, 4, 5, 6]))
+// arrayToString = arr => arr.join('')  // even smaller es6 function of the above statement
+// console.log(arrayToString([1, 2, 3, 4, 5, 6]))
+
+// ('hello') = ('olleh')
+
+function gnirts (x) {  // reversing a string
+    let arr = x.split('') // split with put argument into an array split
+    let newArr = arr.reverse() // reverse the array
+    let joinNewArr = newArr.join('') // now join array as a string
+    return joinNewArr
+}
+
+console.log(gnirts('Ali'))
+
+
+const join =(x)=> ((x.split('')).reverse()).join('')
+console.log(join('hahahha'))
