@@ -1,6 +1,6 @@
 // do code stuff here and that MDN in your friend
 //TODO not code es6 extreme short hand 
-// write a function of two arguments and return and array. return the two arguements in an array
+// write a function of two arguments and return and array. return the two arguments in an array
 
 // function newArr(a, b) {   // normal function es5
 //     let arrOne = [a, b]
@@ -51,7 +51,7 @@
 // function stringToNumber(arr){
 //     newArr = []  // declaring empty array
 //     arr.forEach((x) => {  // doing a for each loop
-//         newArr.push(parseInt(x)) // pushing in a new element to the array mentioned above and parsing it into a interger 
+//         newArr.push(parseInt(x)) // pushing in a new element to the array mentioned above and parsing it into a integer 
 //     })
 //     return newArr
 // }
