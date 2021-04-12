@@ -16,13 +16,19 @@ function odd (x) {
     for (let i = 0; i <= x; i++){
         // console.log(i)
     if( i%2 !== 0) {
-        return i
+        arr.push(i)
     } 
+    
 }
-// if (arr%2 === 0) {
-//             return 'even'
-//         } else {
-//             return 'odd'
-//         }
+    // return arr.reduce((a,b)=>a+b)
+    let result = 0
+    // for (let a=0; a < arr.length; a++) {
+    //     result += arr[a]
+    // }
+    arr.forEach(element => {
+        result += element
+    });
+    return result
 }
-console.log(odd(5))
+console.log(odd(13))
+
