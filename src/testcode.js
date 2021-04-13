@@ -1,24 +1,24 @@
-// Task_1
-// function odd (x) {
-//     let arr = []
-//     for (let i = 0; i <= x; i++){
-//         // console.log(i)
-//     if( i%2 !== 0) {
-//         arr.push(i)
-//     } 
-    
-// }
-//     // return arr.reduce((a,b)=>a+b) // reduce method
-//     let result = 0
-//     // for (let a=0; a < arr.length; a++) {  // for loop method
-//     //     result += arr[a]
-//     // }
-//     arr.forEach(element => { // forEach method
-//         result += element
-//     });
-//     return result
-// }
-// console.log(odd(13))
+//Task_1
+function odd (x) {
+    let arr = []
+    for (let i = 0; i <= x; i++){
+        // console.log(i)
+    if( i%2 !== 0) {
+        arr.push(i)
+    } 
+    // console.log(arr) debugging
+}
+    // return arr.reduce((a,b)=>a+b) // reduce method
+    let result = 0
+    for (let a=0; a < arr.length; a++) {  // for loop method
+        result += arr[a]
+    }
+    // arr.forEach(element => { // forEach method
+    //     result += element
+    // });
+    return result
+}
+console.log(odd(13))
 
 //Task_2
 //TODO: Create a function that takes an array of non-negative integers and strings 
@@ -31,18 +31,28 @@
 //Ex:  filterArr([1, 2, "a", "b"]) -> [1, 2]
 //Ex:  filterArr([1, 2, "aasf", "1", "123", 123]) ➞ [1, 2, 123]
 
-function returnString (a) {
-    let arr = [] // declaring empty array
-    a.forEach((x) => {
-        arr.push(parseFloat(x))
-    })
+// function returnString (a) {
+//     let arr = [] // declaring empty array
+//     a.forEach((x, idx) => {
+//         // arr.push(parseInt(x))
+//         typeof(x) !== 'number' ? a[idx].pop()
+//     })
     
-    let result = arr.filter (arr => arr.type === 'string')
+//     // let result = arr.filter (x ,x>0)
 
-    return result
-}
+//     // return result
+// }
 
-console.log(returnString([1, "22", 'abcde', 7.4, '3']))
+// function returnString (a) {
+//     let arr = [] // declaring empty array
+//     a.forEach((x) => {
+//         arr.push(parseInt(x))
+        
+//     })
+//     return arr.filter((a, b) => arr.indexOf(a) === (b))
+// }
+
+// console.log(returnString([1, "22", 'abcde', 7.4, '3']))
 
 // words = ['spray', 'limit', 'exuberant', 'destruction','elite', 'present']
 // const appendedWords = words.filter( (word, index, arr) => {
