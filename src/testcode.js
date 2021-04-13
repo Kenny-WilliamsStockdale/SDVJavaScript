@@ -1,24 +1,24 @@
 //Task_1
-function odd (x) {
-    let arr = []
-    for (let i = 0; i <= x; i++){
-        // console.log(i)
-    if( i%2 !== 0) {
-        arr.push(i)
-    } 
-    // console.log(arr) debugging
-}
-    // return arr.reduce((a,b)=>a+b) // reduce method
-    let result = 0
-    for (let a=0; a < arr.length; a++) {  // for loop method
-        result += arr[a]
-    }
-    // arr.forEach(element => { // forEach method
-    //     result += element
-    // });
-    return result
-}
-console.log(odd(13))
+// function odd (x) {
+//     let arr = []
+//     for (let i = 0; i <= x; i++){
+//         // console.log(i)
+//     if( i%2 !== 0) {
+//         arr.push(i)
+//     } 
+//     // console.log(arr) debugging
+// }
+//     // return arr.reduce((a,b)=>a+b) // reduce method
+//     let result = 0
+//     for (let a=0; a < arr.length; a++) {  // for loop method
+//         result += arr[a]
+//     }
+//     // arr.forEach(element => { // forEach method
+//     //     result += element
+//     // });
+//     return result
+// }
+// console.log(odd(13))
 
 //Task_2
 //TODO: Create a function that takes an array of non-negative integers and strings 
@@ -33,18 +33,6 @@ console.log(odd(13))
 
 // function returnString (a) {
 //     let arr = [] // declaring empty array
-//     a.forEach((x, idx) => {
-//         // arr.push(parseInt(x))
-//         typeof(x) !== 'number' ? a[idx].pop()
-//     })
-    
-//     // let result = arr.filter (x ,x>0)
-
-//     // return result
-// }
-
-// function returnString (a) {
-//     let arr = [] // declaring empty array
 //     a.forEach((x) => {
 //         arr.push(parseInt(x))
         
@@ -53,6 +41,30 @@ console.log(odd(13))
 // }
 
 // console.log(returnString([1, "22", 'abcde', 7.4, '3']))
+
+// Given an object containing counts of both likes and dislikes of a facebook post, 
+//return a number of count for either likes or dislikes should be displayed. 
+//This is calculated by subtracting the number of dislikes from likes.
+
+//ANCHOR TASK_3:
+//make a function 
+//make an object
+//input properties
+//input data to properties
+//return a number count for likes and dislikes
+//subtract dislikes from likes
+function facebook (likes, dislikes) {
+    let counts = new Object();
+    counts.likes = likes;
+    counts.dislikes = dislikes;
+    return counts
+
+}
+
+console.log(facebook({ likes: 10},{ Dislikes: 3}))
+
+var rect = { width: 20, height: 10 };
+console.log(rect.width);             // => 20 (dot notation)
 
 // words = ['spray', 'limit', 'exuberant', 'destruction','elite', 'present']
 // const appendedWords = words.filter( (word, index, arr) => {
