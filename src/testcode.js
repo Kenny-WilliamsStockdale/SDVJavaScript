@@ -31,16 +31,16 @@
 // Ex:  filterArr([1, 2, "a", "b"]) -> [1, 2]
 // Ex:  filterArr([1, 2, "aasf", "1", "123", 123]) ➞ [1, 2, 123]
 
-function returnString (a) {
-    let arr = [] // declaring empty array
-    a.forEach((x) => {
-        arr.push(parseInt(x))
+// function returnString (a) {
+//     let arr = [] // declaring empty array
+//     a.forEach((x) => {
+//         arr.push(parseInt(x))
         
-    })
-    return arr.filter((a, b) => arr.indexOf(a) === (b))
-}
+//     })
+//     return arr.filter((a, b) => arr.indexOf(a) === (b))
+// }
 
-console.log(returnString([1, "22", 'abcde', 7.4, '3', 1]))
+// console.log(returnString([1, "22", 'abcde', 7.4, '3', 1]))
 
 // Given an object containing counts of both likes and dislikes of a facebook post, 
 //return a number of count for either likes or dislikes should be displayed. 
@@ -103,11 +103,14 @@ console.log(returnString([1, "22", 'abcde', 7.4, '3', 1]))
 // }
 // console.log(facebook(10, 4))
 
-function test(obj) {
-    return obj.num1-obj.num2
+function counts (obj) {
+    let likes = obj.likes
+    let dislikes = obj.dislikes
+    likes -= dislikes
+    return likes
 }
 
-console.log(test({num1: 9, num2: 10}))
+console.log(counts({likes: 19, dislikes: 10}))
 
 // function getCount(obj) {
 //     let likes = obj.likes
