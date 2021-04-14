@@ -53,18 +53,8 @@ console.log(returnString([1, "22", 'abcde', 7.4, '3', 1]))
 //input data to properties
 //return a number count for likes and dislikes
 //subtract dislikes from likes
-function facebook (likes, dislikes) {
-    let counts = new Object();
-    counts.likes = likes;
-    counts.dislikes = dislikes;
-    return counts
 
-}
-
-console.log(facebook({ likes: 10},{ Dislikes: 3}))
-
-var rect = { width: 20, height: 10 };
-console.log(rect.width);             // => 20 (dot notation)
+          // => 20 (dot notation)
 
 // words = ['spray', 'limit', 'exuberant', 'destruction','elite', 'present']
 // const appendedWords = words.filter( (word, index, arr) => {
@@ -100,4 +90,21 @@ console.log(rect.width);             // => 20 (dot notation)
 //     return true
 // }
 
-// isEmpty({ a: 1 }
+// isEmpty({ a: 1 })
+
+
+// function facebook (a, b) {
+//     let fb = new Object();
+//     console.log(fb)
+//     fb.likes = a;
+//     fb.dislikes = b;
+//     console.log(fb)
+//     return console.log(fb = fb.likes - fb.dislikes)
+// }
+// console.log(facebook(10, 4))
+
+function test(obj) {
+    return obj.num1-obj.num2
+}
+
+console.log(test({num1: 9, num2: 10}))
