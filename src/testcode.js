@@ -92,3 +92,12 @@ console.log(rect.width);             // => 20 (dot notation)
 //     return newArr
 // }
 // console.log(stringToNumber(["9.4", "4.2"]));
+
+// function isEmpty(obj) {
+//     for(let key in obj){
+//         return false
+//     }
+//     return true
+// }
+
+// isEmpty({ a: 1 }
