@@ -110,7 +110,22 @@ function counts (obj) {
     return likes
 }
 
-console.log(counts({likes: 19, dislikes: 10}))
+console.log(counts({likes: 20, dislikes: 15}))
+
+// function getCount(object) {
+//     let likes = parseInt(object.likes)
+//     let dislikes = parseInt(object.dislikes)
+//     if (!Number.isInteger(likes) || !Number.isInteger(dislikes)) {
+//         return 'not a number'
+//     }
+//     let difference = likes - dislikes;
+//     if (difference > 0) {
+//         return difference + ' likes'
+//     } else {
+//         return Math.abs(difference) + ' dislikes'
+//     }
+// }
+// console.log(getCount(counts))
 
 // function getCount(obj) {
 //     let likes = obj.likes
