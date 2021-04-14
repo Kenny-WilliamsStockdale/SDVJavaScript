@@ -10,7 +10,7 @@
 // }
 //     // return arr.reduce((a,b)=>a+b) // reduce method
 //     let result = 0
-//     for (let a=0; a < arr.length; a++) {  // for loop method
+//     for (let a = 0; a < arr.length; a++) {  // for loop method
 //         result += arr[a]
 //     }
 //     // arr.forEach(element => { // forEach method
@@ -20,27 +20,27 @@
 // }
 // console.log(odd(13))
 
-//Task_2
-//TODO: Create a function that takes an array of non-negative integers and strings 
-//and return a new array without the strings.
+// Task_2
+// TODO: Create a function that takes an array of non-negative integers and strings 
+// and return a new array without the strings.
 // make function
-//make an array
+// make an array
 // input is non-negative integers and strings
-//return with a new array
-//outputs with out string data type 
-//Ex:  filterArr([1, 2, "a", "b"]) -> [1, 2]
-//Ex:  filterArr([1, 2, "aasf", "1", "123", 123]) ➞ [1, 2, 123]
+// return with a new array
+// outputs with out string data type 
+// Ex:  filterArr([1, 2, "a", "b"]) -> [1, 2]
+// Ex:  filterArr([1, 2, "aasf", "1", "123", 123]) ➞ [1, 2, 123]
 
-// function returnString (a) {
-//     let arr = [] // declaring empty array
-//     a.forEach((x) => {
-//         arr.push(parseInt(x))
+function returnString (a) {
+    let arr = [] // declaring empty array
+    a.forEach((x) => {
+        arr.push(parseInt(x))
         
-//     })
-//     return arr.filter((a, b) => arr.indexOf(a) === (b))
-// }
+    })
+    return arr.filter((a, b) => arr.indexOf(a) === (b))
+}
 
-// console.log(returnString([1, "22", 'abcde', 7.4, '3']))
+console.log(returnString([1, "22", 'abcde', 7.4, '3', 1]))
 
 // Given an object containing counts of both likes and dislikes of a facebook post, 
 //return a number of count for either likes or dislikes should be displayed. 
