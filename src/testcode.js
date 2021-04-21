@@ -103,14 +103,14 @@
 // }
 // console.log(facebook(10, 4))
 
-function counts (obj) {
-    let likes = obj.likes
-    let dislikes = obj.dislikes
-    likes -= dislikes
-    return likes
-}
+// function counts (obj) {
+//     let likes = obj.likes
+//     let dislikes = obj.dislikes
+//     likes -= dislikes
+//     return likes
+// }
 
-console.log(counts({likes: 20, dislikes: 15}))
+// console.log(counts({likes: 20, dislikes: 15}))
 
 // function getCount(object) {
 //     let likes = parseInt(object.likes)
@@ -148,7 +148,7 @@ console.log(counts({likes: 20, dislikes: 15}))
 // console.log(
 //     getCount({
 //         likes: 100,
-//         dislikes: 100
+//    ,     dislikes: 100
 //     })
  
 // )
@@ -170,9 +170,63 @@ console.log(counts({likes: 20, dislikes: 15}))
 // )
  
 // function fancyCode(obj) {
-//     return obj.likes - obj.dislikes
+//    , return obj.likes - obj.dislikes
 // }
  
 // console.log(fancyCode({ likes: 13, dislikes: 0 }))
 // console.log(fancyCode({ likes: 2, dislikes: 23 }))
 // console.log(fancyCode({ likes: 100, dislikes: 100 }))
+
+//ALI TEST CODE CLASS 
+// function indexSearch(arr, num) {
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] === num) {
+//             return i
+//         }
+//     }
+//     return 'wrong'
+// }
+
+// function indexSearch (arr, num) {
+//     return arr.indexOf(num)
+// }
+// console.log(indexSearch([3, 5, 6, 8, 9, 0], 0))
+// arr=[1,1,3,6,4,65,65,6,,98,,5]
+// console.log(arr.length)
+
+// function sumOfCubes (arr) {
+//     let sum = 0
+//     for (let index = 0; index < array.length; index++) {
+//         sum += arr[index] * arr[index] * arr[i]
+        
+//     }
+//     return sum
+// }
+
+// const sumCubes =(arr)=> arr.reduce((a,b)=>a+b**3)
+
+// console.log(sumCubes([1,2,3,4,5]))
+
+// function addToArray(arr) {
+//     for (let i = 0; i < arr.length; i++) {
+//         arr[i] += 1 
+//     }
+//     return arr
+    
+// }
+
+// console.log(addToArray([1,2,3]))
+
+// let obj = {
+//     firstName: 'Kenny',
+//     lastName: 'Stockdale'
+// }
+// console.log(obj.month = 'November')
+// console.log(obj)
+// console.log(obj.firstName = 'Baz')
+// console.log(obj)
+
+const obj = new Object();
+obj.name = 'Sharleen'
+
+console.log(obj)
