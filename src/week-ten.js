@@ -28,13 +28,14 @@ console.log(sumFunc([1, [2, [1]], 3]))
 // flatten([[17.2, 5, "SDV503"]]) -> [17.2, 5, "SDV503"]
 
 const flatten = (arr) => {
-    const result = [];
+    let result = [];
     arr.forEach(element => {
         Array.isArray(element) ? result.push(...flatten(element)) : result.push(element)
     })
+    return result
 }
 
-// console.log(flatten([[17.2, 5, "SDV503"], 13, ['Ali']]))
+console.log(flatten([[17.2, 5, "SDV503"], 13, ['Ali']]))
 
 // Create a function that takes an object or array as an argument and returns the maximum depth of that object or array.
 // getDepth({a: 1}) -> 1
@@ -69,3 +70,36 @@ function createDepth (arr) {
 console.log (createDepth([1, 2, 3]))
 
 const esSixDepth = arr => arr.length === 1 ? arr : [arr[0], createDepth(arr.slice(1))]
+
+/* 
+Create a function that takes an array. This array can have all kinds of items, even other arrays. The function should return a sir
+
+if the item is an Array, include each item in it and the following still apply:
+If the item is a Function, include the function's output, not the function itself.
+If the item is a plain object or a Primitive, include it as is.
+
+*/
+
+// flatArray([1, "2", [3, function() {return4;}, ["five"], "six", true, {prop: "val"}]]) -> [ 1, '2', 3, 4, 'five', 'six', true, { prop: 'val' } ]
+
+function flatArray(arr) {
+    let result = [];
+    if (arr === undefined) {
+        return arr
+    }
+
+    arr.forEach(function (e) {
+        if (Array.isArray(e)) {
+            result = result.concat(flatArray(e))
+        } else {
+         if(typeof e === 'function') {
+             result.push(e())
+         } else {
+             result.push(e)
+         }
+        }
+    })
+    return result 
+}
+console.log (flatArray([1, "2", [3, function() {return 4;}, ["five"], "six", true, {prop: "val"}]]))
+
